@@ -1,0 +1,57 @@
+<div fxLayoutAlign="center" fxFlexFill >
+    <mat-card fxFlex="fxFlexFill" >
+        <p>
+        <mat-toolbar color="warn">
+            <span >WiseDeffender</span>
+            <span class="button"></span>
+        <span>
+            <button  mat-raised-button color="warn"  >Logout</button>    
+            </span>    
+        </mat-toolbar>
+        </p>
+        <span>
+        <div fxLayoutAlign="stretch"  fxFlexFill style="padding:100px;background-color:lightblue">
+            
+            <mat-card fxFlex='91'>
+                <button (click)="createBank()"mat-raised-button color="primary" style="margin-left: 10px ;float:right">Add New</button> 
+                <br><br><br>
+                <mat-toolbar color="accent">Bank Locker Details</mat-toolbar>
+                <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+                    <!-- <thead>
+                        <tr>
+                            <th> First Name</th>
+                            <th> Last Name </th>
+                            <th> Email Id</th>
+                            <th> Actions </th>
+                        </tr>
+                    </thead> -->
+                    <br>
+                    <!-- <tbody> -->
+                        <tr *ngFor = "let bank of bank" >
+                            <br>
+                            <button mat-raised-button color="primary"  style=" font-size:30px; padding:10px 20px; width:1183px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">{{ bank.accName }}
+                                <button (click) = "deleteBank(bank.id)" class = "btn btn-danger" mat-raised-button color="accent" style="margin-left: 10px;float:right"> Delete</button>    
+                            <button  (click) = "updateBank(bank.id)" class = "btn btn-info" mat-raised-button color="accent" style="margin-left: 10px;float:right"> Update</button>
+                            <button (click) = "BankDetails(bank.id)" class = "btn btn-info" mat-raised-button color="accent" style="margin-left: 10px;float:right"> View</button>  
+                            
+                            
+                            </button>
+                 
+                           
+                            <!-- <td> {{ employee.firstName }} </td>
+                            <td> {{ employee.lastName }} </td>
+                            <td> {{ employee.emailId }} </td> -->
+                            <!-- <td>
+                                <button  (click) = "updateEmployee(employee.id)" class = "btn btn-info" style="margin-left: 10px"> Update</button>
+                                <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                                <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+                            </td> -->
+                        </tr>
+
+                    <!-- </tbody> -->
+                </form>
+            </mat-card>
+        </div>
+    </span>
+    </mat-card>
+</div>

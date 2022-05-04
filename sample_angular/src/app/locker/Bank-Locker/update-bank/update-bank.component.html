@@ -1,0 +1,74 @@
+<div fxLayoutAlign="center" fxFlexFill >
+    <mat-card fxFlex="fxFlexFill" >
+        <p>
+        <mat-toolbar color="warn">
+            <span >WiseDeffender</span>
+            <span class="button"></span>
+        <span>
+            <button  mat-raised-button color="warn"  >Logout</button>    
+            </span>    
+        </mat-toolbar>
+        </p>
+        <span>
+        <div fxLayoutAlign="center center"  fxFlexFill class="main-div" style="padding:100px;background-color:lightblue">      
+            <mat-card fxFlex='30'>
+                
+                <mat-toolbar color="accent">Bank Locker Details</mat-toolbar>
+                <form align="center" fxLayoutAlign="stretch" fxLayout="column" class="login-form" (ngSubmit) = "onSubmit()">
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Account Name"  id = "accName" name="accName" [(ngModel)] = "bank.accName">
+                        <mat-label>Account Name</mat-label>
+                    </mat-form-field> 
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Account Number" id="accNumber" name="accNumber" [(ngModel)] = "bank.accNumber">
+                        <mat-label>Account Number</mat-label>
+                    </mat-form-field>  
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Account IFSC Code" id="accIfsc" name="accIfsc" [(ngModel)] = "bank.accIfsc">
+                        <mat-label>Account IFSC Code</mat-label>
+                    </mat-form-field> 
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Account UserName" id="accUsername" name="accUsername" [(ngModel)] = "bank.accUsername">
+                        <mat-label>Account UserName</mat-label>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Account Password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'"   id="accPassword" name="accPassword"   [(ngModel)] = "bank.accPassword">
+                        <button mat-icon-button matSuffix (click)="hide = !hide"[attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+              </mat-form-field>
+                    <!-- <div class="form-group">
+                            <label  style="width:100px;display:inline-block">Account Name : </label>
+                            <input type="text" class ="form-control" id = "accName" placeholder="Account Name"
+                                [(ngModel)] = "bank.accName" name = "accName">
+                        </div><br><br>
+                        <div class="form-group">
+                            <label style="width:100px;display:inline-block">Account Number : </label>
+                            <input type="text" class ="form-control" id = "accNumber" placeholder="Account Number"
+                                [(ngModel)] = "bank.accNumber" name = "accNumber">
+                        </div><br><br>
+                        <div class="form-group">
+                            <label style="width:100px;display:inline-block">Account IFSC Code : </label>
+                            <input type="text" class ="form-control" id = "accIfsc" placeholder="Account IFSC Code"
+                                [(ngModel)] = "bank.accIfsc" name = "accIfsc" >
+                        </div>
+                        <div class="form-group">
+                            <label style="width:100px;display:inline-block">Account UserName : </label>
+                            <input type="text" class ="form-control" id = "accUsername" placeholder="Account UserName"
+                                [(ngModel)] = "bank.accUsername" name = "accUsername" >
+                        </div>
+                        <div class="form-group">
+                            <label style="width:100px;display:inline-block">Account Password : </label>
+                            <input type="text" class ="form-control" id = "accPassword" placeholder="Account Password"
+                                [(ngModel)] = "bank.accPassword" name = "accPassword" >
+                        </div> -->
+                    <br><br>
+                
+                <button class = "btn btn-success" mat-raised-button color="primary" type ="submit">ADD</button>
+            </form>
+        </mat-card>
+        </div>
+        </span>
+            </mat-card>
+        </div>

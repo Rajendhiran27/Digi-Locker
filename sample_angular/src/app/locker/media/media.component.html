@@ -1,0 +1,119 @@
+<!-- 
+<div class="container row">
+    <div class="col-md-12">
+        <h1>Upload Image</h1>
+    </div>
+</div>
+
+<div class="container row">
+    <div class="col-md-6">
+        <input type="file" (change)="onFileChanged($event)">
+
+    </div>
+    <div class="col-md-6">
+        <input type="button" (click)="onUpload()" value="upload">
+    </div>
+</div>
+<hr />
+<div class="container row">
+    <div class="col-md-12">
+        <div *ngIf=message>{{message}}</div>
+    </div>
+</div>
+
+<div class="container row">
+    <div class="col-md-6">
+        <input type="text" class="form-control" id="name" placeholder="image name" [(ngModel)]="imageName"
+            name="name" />
+    </div>
+    <div class="col-md-6">
+        <input type="button" (click)="getImage()" value="Get Image">zzz
+
+    </div>
+</div>
+
+<div class="container row">
+    <div class="col-md-12">
+        <div *ngIf=retrievedImage>
+            <img [src]="retrievedImage">
+        </div>
+    </div>
+</div> -->
+<!-- <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card > -->
+        <!-- <mat-toolbar color="accent">WiseDeffender</mat-toolbar> -->
+        <h2 align="center" style="padding:13px;background-color:orangered">WiseDeffender
+            <button style="float:right" mat-raised-button color="warn"  >Logout</button>  </h2>
+<div style="padding:100px;background-color:lightblue">
+        <div class="container row">
+            <div class="col-md-6">
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <input style="color:red" type="file" (change)="onFileChanged($event)">
+            </div><br><br>
+            <div class="col-md-6">
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <input type="button" align="center" class="but" style="color:blue;padding:10px;float:center;width: 100px;" color="primary" (click)="onUpload()" value="upload">
+            </div><br><br>
+        </div>
+        <hr />
+        <div class="container row">
+            <div class="col-md-12">
+                <div *ngIf=message>{{message}}</div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container row">
+            <!-- <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button> -->
+            <div class="col-md-6">
+                
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <input type="text" class="form-control" id="name" placeholder="image name" [(ngModel)]="imageName"
+                    name="name" />
+            </div>
+            <br><br>
+            <div class="col-md-6">
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <button mat-raised-button color="primary" (click)="getImage()" value="Get Image"></button>
+                <input type="button" (click)="getImage()" value="Get Image">
+        
+            </div>
+        </div>
+        <br><br>
+        <div class="container row">
+            <div class="col-md-12">
+                <div *ngIf=retrievedImage>
+                    <img [src]="retrievedImage">
+                </div>
+            </div>
+        </div>
+    
+</div>              
+                
+
+        

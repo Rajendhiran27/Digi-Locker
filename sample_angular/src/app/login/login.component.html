@@ -1,0 +1,26 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex='30'>
+        <mat-toolbar color="accent">WiseDeffender</mat-toolbar>
+        <h2 align="center">Sign In</h2>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" (ngSubmit)="userLogin()">
+            <mat-form-field appearance="outline">
+                <input matInput [(ngModel)] ="login.emailId" id="emailId" name="emailId" placeholder="UserName">
+                <mat-label>UserName</mat-label>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                      <mat-label>Password</mat-label>
+                      <input matInput [(ngModel)] ="login.password" id="password" name="password" [type]="hide ? 'password' : 'text'" >
+                      <button mat-icon-button matSuffix (click)="hide = !hide"[attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </button>
+            </mat-form-field>
+            <button  color="primary"  mat-raised-button type="submit" class="mat-button">Login</button>
+            <br/>
+            <p align="right">New User?<a routerLink="../register" align="right">Register</a></p>
+            <br>
+            <p align="right">Admin?<a routerLink="../admin-login" align="right">Admin</a></p>
+        </form>       
+    </mat-card>
+</div>
+
+  
